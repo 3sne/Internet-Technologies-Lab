@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Q1: Display position of elements on click</title>
+</head>
+
+<body>
+    <div class="headdd">
+        Q1: Display position of elements on click.
+    </div>
+    <div class="dummies">
+        <div class="dummy" style="background: #4285F4"></div>
+        <div class="dummy" style="background: #DB4437"></div>
+        <div class="dummy" style="background: #F4B400"></div>
+        <div class="dummy" style="background: #0F9D58"></div>
+    </div>
+    <div class="container">
+        <div id="card1" class="content">
+            <h2>Click any element to get its location</h2>
+            <br>
+            <hr>
+            <br>
+            <span id="thingy"></span>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("click", (ce) => {
+            // console.log(ce);
+            document.getElementById("card1").style.height = "10em";
+            let pos = {
+                x: ce.originalTarget.offsetLeft,
+                y: ce.originalTarget.offsetTop
+            }
+            console.log(pos.x, pos.y);
+            document.getElementById("thingy").innerHTML = `
+                Position: 
+                <br>
+                (X: ${pos.x}, Y: ${pos.y});
+            `;
+        }); 
+    </script>
+</body>
+
+</html>

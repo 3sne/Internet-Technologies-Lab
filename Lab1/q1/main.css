@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+}
+
+.headdd {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.5em;
+}
+
+.dummies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3em;
+}
+
+.dummy {
+    height: 100px; 
+    width: 100px; 
+    background: teal; 
+    margin: 1em;
+    border-radius: 1em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.dummy:hover {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.dummy:active {
+    opacity: 0.9;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.content {
+    height: 5em;
+    width: 20em;
+    background: linear-gradient(180deg, #5f2c82, #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 1em;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    transition: box-shadow 0.3s ease-out;
+    transition: height 0.6s ease;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    /* flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+}
+
+#thingy {
+    font-size: 1.2em;
+}

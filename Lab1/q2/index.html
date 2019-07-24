@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Q2: Reminder Thingy~!</title>
+</head>
+
+<body>
+    <div class="headdd">
+        Q2: Clocks with Greets~!
+    </div>
+    <div id="dh" class="date_holder"></div>
+    <blockquote id="hb" class="henlo_box"></blockquote>
+    <script>
+        const adjustZero = (n) => {
+            if (n < 10) {
+                return '0' + n;
+            }
+            return n;
+        }
+
+        setInterval(() => {
+            let sDate = new Date();
+            console.log(sDate);
+            let dh = document.getElementById('dh');
+            let tComponents = {
+                currSec: adjustZero(sDate.getSeconds()),
+                currMin: adjustZero(sDate.getMinutes()),
+                currHour: adjustZero(sDate.getHours())
+            };
+            dh.innerHTML = `
+                ${tComponents.currHour} : ${tComponents.currMin} : ${tComponents.currSec}
+            `;
+
+            // let sDate = new Date();
+            const henlo_msgs = {
+                earlyMorning: "Have a bad morning!",
+                lateMorning: "Prepare to procastinate!",
+                afternoon: "Why not take a nap?",
+                evening: "Just go home, you can do this later.",
+                night: "Make sure to NOT go to bed on time.",
+                NIGHT: "I see you are peoples of culture",
+                default: "I just says a HENLO"
+            }
+            const chr = sDate.getHours();
+            let msgSelect = '';
+            if (chr >= 0 && chr < 6) {
+                msgSelect = henlo_msgs.NIGHT;
+            } else if (chr >= 6 && chr < 9) {
+                msgSelect = henlo_msgs.earlyMorning;
+            } else if (chr >= 9 && chr < 12) {
+                msgSelect = henlo_msgs.lateMorning;
+            } else if (chr >= 12 && chr < 16) {
+                msgSelect = henlo_msgs.afternoon;
+            } else if (chr >= 16 && chr < 20) {
+                msgSelect = henlo_msgs.evening;
+            } else if (chr >= 20 && chr <= 24) {
+                msgSelect = henlo_msgs.night;
+            } else {
+                msgSelect = henlo_msgs.default;
+            }
+            console.log(msgSelect);
+            document.getElementById('hb').innerHTML = `
+                <u>${msgSelect}</u>
+            `;
+        }, 999);
+    </script>
+</body>
+
+</html>

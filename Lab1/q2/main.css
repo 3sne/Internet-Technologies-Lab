@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(assets/imgs/bg-01.jpg);
+    background-size: cover;
+}
+
+.headdd {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.5em;
+}
+
+.date_holder  {
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10em;
+    margin: 0.5em;
+}
+
+.henlo_box::before {
+    content: "“";
+    font-size: 3.4em;
+}
+
+.henlo_box::after {
+    content: "„";
+    font-size: 3.4em;
+}
+
+.henlo_box {
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.7em;
+    margin: 0.5em;
+}
