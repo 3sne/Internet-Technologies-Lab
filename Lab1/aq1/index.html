@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AQ1 ~ Color Picker</title>
+</head>
+<style>
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tit-le {
+    font-size: 2em;
+}
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="tit-le">
+            AQ1 ~ Color Picker
+        </div>
+        <div class="real-body">
+                <canvas width="600" height="440" id="canvas_picker"></canvas>
+                <div id="hex">HEX: <input type="text"></input></div>
+                <div id="rgb">RGB: <input type="text"></input></div>
+        </div>
+    </div>
+    <script>
+        var canvas = document.getElementById('canvas_picker').getContext('2d');
+        document.getElementById('canvas_picker').addEventListener('click', function(event){
+            var x = event.pageX - this.offsetLeft;
+            var y = event.pageY - this.offsetTop;
+            console.log(x , y);
+        });
+    </script>
+</body>
+
+</html>
