@@ -9,10 +9,11 @@ namespace QueryStringCar
 {
     public partial class inputPage : System.Web.UI.Page
     {
-        string[] manList = { "Albany", "Rooster", "Osiris", "Pegassi", "Reaper", "X80 Proto" };
+        string[] manList = { "Albany", "Ocelot", "Osiris", "Pegassi", "Progen", "Grotti", "Truffade" };
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack) return;
+            manList = manList.OrderBy(x => x).ToArray();
             foreach (string s in manList)
                 DropDownList1.Items.Add(new ListItem(s));
         }

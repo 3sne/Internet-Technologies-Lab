@@ -12,7 +12,10 @@ namespace QueryStringCar
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack) return;
-            main.InnerHtml = string.Format("<strong> Model >> </strong> {0} <br> <strong> Name >> </strong> {1}", Request.QueryString["modelName"], Request.QueryString["carName"]);
+            string gotModelNameAs = Request.QueryString["modelName"];
+            string gotCarNameAs = Request.QueryString["carName"];
+            //main.InnerHtml = string.Format(@"<h2>Your selection:</h2><br><strong> {0} {1}</strong>", Request.QueryString["modelName"], Request.QueryString["carName"]);
+            car_holder.InnerText = string.Format("{0} {1}", gotModelNameAs, gotCarNameAs);
         }
 
         protected void Button1_Click(object sender, EventArgs e)
