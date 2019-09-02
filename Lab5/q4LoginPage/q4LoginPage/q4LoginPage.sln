@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "q4LoginPage", "q4LoginPage\", "{7C92897E-AF8F-46DF-A8A5-22F3825416D3}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51501"
+		Debug.AspNetCompiler.PhysicalPath = "q4LoginPage\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51501\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51501"
+		Release.AspNetCompiler.PhysicalPath = "q4LoginPage\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51501\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51501"
+		SlnRelativePath = "q4LoginPage\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C92897E-AF8F-46DF-A8A5-22F3825416D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C92897E-AF8F-46DF-A8A5-22F3825416D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAB18211-70B5-408F-B37A-72959F77A787}
+	EndGlobalSection
+EndGlobal
