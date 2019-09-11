@@ -22,3 +22,19 @@ It contains minified precompiled css and js from the boostrap library.<br>
 </body>
 </html>
 ```
+
+<hr>
+
+### Lab 6
+* Validation Controls use `visibility:hidden;` by default. This leads to element taking up on-screen real-estate. To make this better, set `Display="Dynamic"` on every Validation Control. This hides the inactive element at block level. Also, set `Display="None"` to not show individual errors, in case `ValidationSummary` is used.  
+
+* To remedy `UnobtrusiveValidationMode` server error, paste the following key in `web.config`:
+    ```as
+    <configuration>
+        <appSettings>
+            <add 
+                key="ValidationSettings:UnobtrusiveValidationMode" 
+                value="None" />
+        </appSettings>
+    </configuration>
+    ```
