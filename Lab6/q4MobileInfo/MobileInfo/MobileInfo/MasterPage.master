@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="ext/css/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style>
+        .row.vdivide [class*='col-']:not(:last-child):after {
+            background: #e0e0e0;
+            width: 1px;
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="Default.aspx">< /> MobileInfoChecker</a>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">:)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4">
+        <div class="row vdivide">
+            <div class="col-3">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder_leftPane" runat="server" />
+            </div>
+            <div class="col-9">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder_mainContent" runat="server">
+                    <div class="jumbotron text-center">
+                        <p class="h3">Mom's Spaghetti with Nelson Bighetti.</p>
+                    </div>
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footy" class="container">
+        <hr />
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p>This is a generic footer in <code>MasterPage.aspx</code></p>
+            </div>
+            <div class="col-lg-4">
+                <p class="h5">Contact Us</p>
+                Email: xXPusciSlayarXx@yahoo.net<br />
+                123, Alley 1337,<br />
+                Very Big Street,<br />
+                USofA
+            </div>
+        </div>
+    </footer>
+    <script src="ext/js/jquery-3.4.1.min.js"></script>
+    <script src="ext/js/popper.min.js"></script>
+    <script src="ext/js/bootstrap.min.js"></script>
+</body>
+</html>

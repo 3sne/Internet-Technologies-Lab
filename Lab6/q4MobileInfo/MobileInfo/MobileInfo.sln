@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MobileInfo", "MobileInfo\", "{38AC8884-2C3F-48E9-B355-2C95EE129E2D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52618"
+		Debug.AspNetCompiler.PhysicalPath = "MobileInfo\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52618\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52618"
+		Release.AspNetCompiler.PhysicalPath = "MobileInfo\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52618\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52618"
+		SlnRelativePath = "MobileInfo\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38AC8884-2C3F-48E9-B355-2C95EE129E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38AC8884-2C3F-48E9-B355-2C95EE129E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49927B0A-AEB9-447E-ACD7-83998640DDDA}
+	EndGlobalSection
+EndGlobal

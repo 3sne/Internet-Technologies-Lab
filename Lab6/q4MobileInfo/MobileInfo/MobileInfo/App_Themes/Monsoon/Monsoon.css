@@ -1,0 +1,13 @@
+﻿body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+input[type=submit], button {
+    padding: 0.75em;
+    background: cyan;
+    color: black;
+    border-radius: 1em;
+    border: 1px solid black;
+}
