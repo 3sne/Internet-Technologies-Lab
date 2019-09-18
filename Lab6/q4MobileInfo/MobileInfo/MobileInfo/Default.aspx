@@ -9,6 +9,8 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder_mainContent" Runat="Server">
-    <asp:DropDownList ID="ddl1" OnSelectedIndexChanged="ddl1_SelectedIndexChanged" runat="server"></asp:DropDownList>
+    <form runat="server">
+        <asp:DropDownList ID="ddl1" OnSelectedIndexChanged="ddl1_SelectedIndexChanged" runat="server"></asp:DropDownList>
+    </form>
 </asp:Content>
 

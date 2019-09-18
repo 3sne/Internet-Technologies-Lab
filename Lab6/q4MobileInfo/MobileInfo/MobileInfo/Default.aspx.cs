@@ -9,28 +9,11 @@ public partial class _Default : System.Web.UI.Page
 {
 
     private readonly string[] phoneList = { "OnePlus 3", "iPhone X", "Google Pixel 3" };
-    private string currSelection;
-    public string CurrSelection
-    {
-        set
-        {
-            this.currSelection = Session["phone"].ToString();
-        }
-        get
-        {
-            if (Session["phone"] != null)
-            {
-                return Session["phone"].ToString();
-            } else
-            {
-                return "none";
-            }
-        }
-    }
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (IsPostBack) return;
+        foreach (string s in phoneList) ddl1.Items.Add(new ListItem(s));
     }
 
     protected void ddl1_SelectedIndexChanged(object sender, EventArgs e)
